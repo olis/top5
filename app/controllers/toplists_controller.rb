@@ -1,0 +1,3 @@
+class ToplistsController < ApplicationController
+  
+end
