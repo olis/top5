@@ -41,6 +41,10 @@ p, ul, ol {
 ul, ol {
 }
 
+ol li {
+  margin-left: 30px;
+}
+
 a {
 	text-decoration: none;
 	color: #5D9800;
@@ -231,22 +235,22 @@ img.aligncenter {
 	padding: 0px 20px 0px 0px;
 }
 
-.post {
+.toplist {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #EFF4F5;
 }
 
-.post .title {
+.toplist .title {
 	letter-spacing: -1px;
 }
 
-.post .title a {
+.toplist .title a {
 	color: #E6700E;
 	border: none;
 }
 
-.post .meta {
+.toplist .meta {
 	padding-bottom: 5px;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
@@ -254,10 +258,10 @@ img.aligncenter {
 	font-style: italic;
 }
 
-.post .meta a {
+.toplist .meta a {
 }
 
-.post .entry {
+.toplist .items {
 	text-align: justify;
 	margin-bottom: 25px;
 	padding: 10px 0px 0px 0px;

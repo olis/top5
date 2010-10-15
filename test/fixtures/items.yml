@@ -1,0 +1,24 @@
+david_bowie:
+  toplist: my_top5_singers_of_all_time
+  position: 1
+  title: "David Bowie"
+
+van_morrison:
+  toplist: my_top5_singers_of_all_time
+  position: 2
+  title: "Van Morrison"
+
+paul_weller:
+  toplist: my_top5_singers_of_all_time
+  position: 3
+  title: "Paul Weller"
+
+john_mayer:
+  toplist: my_top5_singers_of_all_time
+  position: 4
+  title: "John Mayer"
+
+george_harrison:
+  toplist: my_top5_singers_of_all_time
+  position: 5
+  title: "George Harrison"
