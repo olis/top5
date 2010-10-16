@@ -1,24 +1,74 @@
 david_bowie:
-  toplist: my_top5_singers_of_all_time
+  toplist: top5_singers_of_all_time
   position: 1
   title: "David Bowie"
 
 van_morrison:
-  toplist: my_top5_singers_of_all_time
+  toplist: top5_singers_of_all_time
   position: 2
   title: "Van Morrison"
 
 paul_weller:
-  toplist: my_top5_singers_of_all_time
+  toplist: top5_singers_of_all_time
   position: 3
   title: "Paul Weller"
 
 john_mayer:
-  toplist: my_top5_singers_of_all_time
+  toplist: top5_singers_of_all_time
   position: 4
   title: "John Mayer"
 
 george_harrison:
-  toplist: my_top5_singers_of_all_time
+  toplist: top5_singers_of_all_time
   position: 5
   title: "George Harrison"
+
+salsa:
+  toplist: top5_bicycle_brands
+  position: 1
+  title: "Salsa Cycles"
+
+kona:
+  toplist: top5_bicycle_brands
+  position: 2
+  title: "Kona"
+
+spezialised:
+  toplist: top5_bicycle_brands
+  position: 3
+  title: "Spezialised"
+
+cannondale:
+  toplist: top5_bicycle_brands
+  position: 4
+  title: "Cannondale"
+
+canyon:
+  toplist: top5_bicycle_brands
+  position: 5
+  title: "Canyon"
+
+oracular_spectacular:
+  toplist: top5_albums_of_all_time
+  position: 1
+  title: "Oracluar Spectacular / MGMT"
+
+vampire_weekend:
+  toplist: top5_albums_of_all_time
+  position: 2
+  title: "Vampire Weekend / Vampire Weekend"
+
+broken_bells:
+  toplist: top5_albums_of_all_time
+  position: 3
+  title: "Broken Bells / Broken Bells"
+
+the_life_persuit:
+  toplist: top5_albums_of_all_time
+  position: 4
+  title: "The Life Persuit / Belle And Sebastian"
+
+the_suburbs:
+  toplist: top5_albums_of_all_time
+  position: 5
+  title: "The Suburbs / Arcade Fire"

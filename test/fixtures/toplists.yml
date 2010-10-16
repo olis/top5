@@ -1,8 +1,8 @@
-my_top5_singers_of_all_time:
-  topic: my_top5_singers_of_all_time
+top5_singers_of_all_time:
+  topic: top5_singers_of_all_time
 
-my_top5_albums_of_all_time:
-  topic: my_top5_albums_of_all_time
+top5_albums_of_all_time:
+  topic: top5_albums_of_all_time
 
-my_top5_movies_of_all_time:
-  topic: my_top5_movies_of_all_time
+top5_bicycle_brands:
+  topic: top5_bicycle_brands
