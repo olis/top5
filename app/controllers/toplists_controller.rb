@@ -4,4 +4,8 @@ class ToplistsController < ApplicationController
     @toplists = Toplist.all
   end
   
+  def new
+    @toplist = Toplist.new
+  end
+  
 end

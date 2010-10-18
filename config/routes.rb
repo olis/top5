@@ -4,6 +4,8 @@ Top5::Application.routes.draw do
 
   root :to => "toplists#index"
   
+  resources :toplists
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
