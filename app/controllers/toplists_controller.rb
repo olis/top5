@@ -1,5 +1,5 @@
 class ToplistsController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new]
+  before_filter :authenticate_using_twitter
   
   def index
     @toplists = Toplist.all

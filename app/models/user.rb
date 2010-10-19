@@ -5,4 +5,12 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :remember_me
+  
+  def self.new_with_session(params, session)
+    super.tap do |user|
+      if data = session["devise.twitter_data"]
+        user.email = data["email"]
+      end
+    end
+  end
 end

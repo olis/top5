@@ -6,8 +6,9 @@ gem 'rails', '3.0.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
-gem 'devise'
-gem "omniauth"
+gem 'devise', :git => 'http://github.com/plataformatec/devise.git', :branch => 'omniauth'
+gem "oa-oauth", :require => "omniauth/oauth"
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
