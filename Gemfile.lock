@@ -43,12 +43,14 @@ GEM
       activesupport (~> 3.0.0)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
+    columnize (0.3.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     faraday (0.4.6)
       addressable (>= 2.1.1)
       rack (>= 1.0.1)
     i18n (0.4.1)
+    linecache (0.43)
     mail (2.2.7)
       activesupport (>= 2.3.6)
       mime-types
@@ -89,6 +91,11 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
+    ruby-debug (0.10.3)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.3.0)
+    ruby-debug-base (0.10.3)
+      linecache (>= 0.3)
     sqlite3-ruby (1.2.5)
     thor (0.14.3)
     treetop (1.4.8)
@@ -104,4 +111,5 @@ DEPENDENCIES
   devise!
   oa-oauth
   rails (= 3.0.0)
+  ruby-debug
   sqlite3-ruby (= 1.2.5)
