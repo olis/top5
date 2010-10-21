@@ -25,7 +25,8 @@ h1 {
 	font-size: 2em;
 }
 
-h2 {
+h2,
+fieldset legend {
 	font-size: 2.4em;
 }
 
@@ -245,7 +246,8 @@ img.aligncenter {
 	letter-spacing: -1px;
 }
 
-.toplist .title a {
+.toplist .title a,
+fieldset legend {
 	color: #E6700E;
 	border: none;
 }
@@ -387,3 +389,52 @@ img.aligncenter {
 #footer a {
 	color: #FFFFFF;
 }
+
+/* @group fieldset */
+
+fieldset {    
+float: left;    
+clear: left;    
+width: 100%;    
+margin: 0 0 1.5em 0;    
+padding: 0;
+border: none;
+}
+  
+legend {   
+margin-left: 1em;   
+color: #000000;   
+font-weight: bold;  
+}
+  
+fieldset ol {   
+padding: 1em 1em 0 1em;   
+list-style: none;  
+}
+
+fieldset li {    
+float: left;    
+clear: left;    
+width: 100%;    
+padding-bottom: 1em;   
+}
+
+fieldset.submit {    
+float: none;    
+width: auto;    
+border: 0 none #FFF;    
+padding-left: 12em;   
+}
+
+label {    
+display: block;
+float: left;    
+width: 1em;    
+margin-right: 1em;
+}
+
+fieldset input[type=text] {
+  width: 400px;
+}
+
+/* @end */

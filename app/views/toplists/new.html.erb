@@ -1,1 +1,19 @@
-Here You will be able to create a new toplist.
+
+<% form_for @toplist do |f| %>
+  <fieldset>
+    <legend>New Toplist</legend>
+    <ol>
+      <li>
+        <%= f.select :topic_id, Topic.all.collect {|topic| [topic.title, topic.id]} %>
+      </li>
+      <% f.fields_for :items do |g| %>
+        <li>
+          <%= g.label :title, g.object.position %> <%= g.text_field :title %>
+        </li>
+      <% end %>
+    </ol>
+  </fieldset>
+  <fieldset class="submit">
+    <%= f.submit %>
+  </fieldset>
+<% end %>
