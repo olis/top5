@@ -2,6 +2,8 @@ Top5::Application.routes.draw do
 
   root :to => "toplists#index"
   
+  match '/auth/:provider/callback', :to => 'sessions#create'
+  
   resources :toplists
   
   # The priority is based upon order of creation:
