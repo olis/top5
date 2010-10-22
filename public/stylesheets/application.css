@@ -433,10 +433,10 @@ padding-bottom: 1em;
 }
 
 fieldset.submit {    
-float: none;    
+float: right;    
 width: auto;    
 border: 0 none #FFF;    
-padding-left: 12em;   
+padding-right: 4em;   
 }
 
 label {    

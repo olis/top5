@@ -1,6 +1,6 @@
 <div class="toplist">
 	<h2 class="title"><a href="#"><%= toplist.topic.title %></a></h2>
-	<p class="meta">Posted from <a href="#">Someone</a> on <%= toplist.updated_at.to_s(:short) %>
+	<p class="meta">Posted from <a href="#"><%= toplist.user.name %></a> on <%= toplist.updated_at.to_s(:short) %>
 		&nbsp;&bull;&nbsp; <a href="#" class="comments">Users (64)</a> &nbsp;&bull;&nbsp; <%= link_to 'Add Your Own', new_toplist_path %>
 	<ol class="items">
     <%= render :partial => toplist.items %>

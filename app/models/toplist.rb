@@ -1,6 +1,9 @@
 class Toplist < ActiveRecord::Base
+  belongs_to :user
   belongs_to :topic
   has_many :items
+  
+  validates_presence_of :user_id, :topic_id
   
   accepts_nested_attributes_for :topic, :reject_if => proc { |attributes| attributes['title'].blank? }
   accepts_nested_attributes_for :items

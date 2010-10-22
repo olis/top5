@@ -17,4 +17,8 @@ class ApplicationController < ActionController::Base
     @current_user = user
     session[:user_id] = user.id
   end
+  
+  def require_user
+    redirect_to '/auth/twitter' unless signed_in?
+  end
 end

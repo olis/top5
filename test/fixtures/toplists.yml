@@ -1,8 +1,11 @@
 top5_singers_of_all_time:
+  user: hans_fischer
   topic: top5_singers_of_all_time
 
 top5_albums_of_all_time:
+  user: hans_fischer
   topic: top5_albums_of_all_time
 
 top5_bicycle_brands:
+  user: hans_fischer
   topic: top5_bicycle_brands
