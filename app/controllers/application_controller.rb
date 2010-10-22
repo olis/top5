@@ -19,6 +19,17 @@ class ApplicationController < ActionController::Base
   end
   
   def require_user
+    session[:return_to] = request.url
     redirect_to '/auth/twitter' unless signed_in?
+  end
+  
+  def redirect_back_or_default(default)
+    return_to = session[:return_to]
+    session[:return_to] = nil
+    if return_to
+      redirect_to(return_to)
+    else
+      redirect_to(default)
+    end
   end
 end

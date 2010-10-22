@@ -3,6 +3,8 @@ Top5::Application.routes.draw do
   root :to => "toplists#index"
   
   match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/auth/twitter', :as => 'signin'
+  match 'signout', :to => 'sessions#destroy', :as => 'signout'
   
   resources :toplists
   

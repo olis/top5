@@ -7,6 +7,11 @@ class SessionsController < ApplicationController
     self.current_user = @auth.user
     
     notice = "Welcome, #{current_user.name}."
+    redirect_back_or_default root_path
+  end
+  
+  def destroy
+    session[:user_id] = nil
     redirect_to root_path
   end
 end

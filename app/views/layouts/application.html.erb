@@ -47,10 +47,10 @@ Released   : 20100704
 			<li><a href="#">Contact</a></li>
 			%>
 			<% unless signed_in? %>
-			  <li class="last"><%= link_to 'Sign in', '/auth/twitter' %></li>
+			  <li class="last"><%= link_to 'Sign in', signin_path %></li>
 			<% else %>
 			  <li class="last">
-			    <%= link_to '#' do %>
+			    <% link_to signout_path do %>
 			      <%= image_tag current_user.image, :size => '32x32' %> <span><%= current_user.name %></span>
 			    <% end%>
 			  </li>
