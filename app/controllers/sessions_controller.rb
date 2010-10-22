@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     end
     self.current_user = @auth.user
     
-    render :text => "Welcome, #{current_user.name}."
+    notice = "Welcome, #{current_user.name}."
+    redirect_to root_path
   end
 end

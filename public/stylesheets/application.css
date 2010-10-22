@@ -182,6 +182,19 @@ img.aligncenter {
 	float: left;
 }
 
+#menu li.last {
+  float: right;
+}
+
+#menu a img {
+  display: inline;
+  margin-top: -10px;
+}
+
+#menu a span {
+  vertical-align: top;
+}
+
 #menu a {
 	display: block;
 	height: 33px;

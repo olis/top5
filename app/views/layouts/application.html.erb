@@ -46,6 +46,15 @@ Released   : 20100704
 			<li><a href="#">Propose New Topic</a></li>
 			<li><a href="#">Contact</a></li>
 			%>
+			<% unless signed_in? %>
+			  <li class="last"><%= link_to 'Sign in', '/auth/twitter' %></li>
+			<% else %>
+			  <li class="last">
+			    <%= link_to '#' do %>
+			      <%= image_tag current_user.image, :size => '32x32' %> <span><%= current_user.name %></span>
+			    <% end%>
+			  </li>
+			<% end %>
 		</ul>
 	</div>
 	<!-- end #menu -->
