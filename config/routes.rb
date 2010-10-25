@@ -6,6 +6,8 @@ Top5::Application.routes.draw do
   match '/auth/twitter', :as => 'signin'
   match 'signout', :to => 'sessions#destroy', :as => 'signout'
   
+  match 'about', :to => 'statics#about', :as => 'about'
+  
   resources :toplists
   
   # The priority is based upon order of creation:

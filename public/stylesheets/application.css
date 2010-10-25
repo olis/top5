@@ -260,9 +260,14 @@ img.aligncenter {
 }
 
 .toplist .title a,
+#content h2,
 fieldset legend {
 	color: #E6700E;
 	border: none;
+}
+
+#content h2 {
+  margin-bottom: 20px;
 }
 
 .toplist .meta {
