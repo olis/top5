@@ -1,7 +1,7 @@
 class Toplist < ActiveRecord::Base
   belongs_to :user
   belongs_to :topic
-  has_many :items
+  has_many :items, :dependent => :destroy
   
   validates_presence_of :user_id, :topic_id
   
