@@ -9,6 +9,7 @@ gem 'ruby-debug'
 # gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'devise'
 gem 'omniauth'
+gem "oa-oauth", :require => "omniauth/oauth"
 
 
 # Use unicorn as the web server
