@@ -73,10 +73,9 @@ Released   : 20100704
 						<li>
 							<h2>Categories</h2>
 							<ul>
-								<li><a href="#">Music</a></li>
-								<li><a href="#">Movies</a></li>
-								<li><a href="#">Sports</a></li>
-								<li><a href="#">Brands/Companies</a></li>
+							  <% Category.ordered.each do |category| %>
+							    <li><%= link_to category.title, category_toplists_path(category) %></li>
+							  <% end %>
 							</ul>
 						</li>
 						<li>

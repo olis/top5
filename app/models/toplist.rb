@@ -9,7 +9,7 @@ class Toplist < ActiveRecord::Base
   accepts_nested_attributes_for :topic, :reject_if => proc { |attributes| attributes['title'].blank? }
   accepts_nested_attributes_for :items
   
-  default_scope :order => 'updated_at desc'
+  named_scope :ordered, :order => 'updated_at desc'
   
   def build_items
     5.times do |i|

@@ -8,6 +8,9 @@ Top5::Application.routes.draw do
   
   match 'about', :to => 'statics#about', :as => 'about'
   
+  resources :categories do
+    resources :toplists
+  end
   resources :toplists
   
   # The priority is based upon order of creation:

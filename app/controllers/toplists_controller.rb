@@ -2,7 +2,7 @@ class ToplistsController < ApplicationController
   before_filter :require_user, :only => [:new, :create]
   
   def index
-    @toplists = Toplist.all
+    @toplists = Toplist.ordered
   end
   
   def new

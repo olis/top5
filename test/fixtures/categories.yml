@@ -1,5 +1,7 @@
 music:
   title: "Music"
+  position: 1
 
 brands:
   title: "Brands/Companies"
+  position: 2
