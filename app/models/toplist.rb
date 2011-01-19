@@ -4,6 +4,7 @@ class Toplist < ActiveRecord::Base
   has_many :items, :dependent => :destroy
   
   validates_presence_of :user_id, :topic_id
+  validates_uniqueness_of :topic_id, :scope => :user_id
   
   accepts_nested_attributes_for :topic, :reject_if => proc { |attributes| attributes['title'].blank? }
   accepts_nested_attributes_for :items
