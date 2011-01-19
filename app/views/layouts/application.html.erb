@@ -73,6 +73,7 @@ Released   : 20100704
 						<li>
 							<h2>Categories</h2>
 							<ul>
+							  <li><%= link_to 'All', toplists_path %></li>
 							  <% Category.ordered.each do |category| %>
 							    <li><%= link_to category.title, category_toplists_path(category) %></li>
 							  <% end %>

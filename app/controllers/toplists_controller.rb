@@ -1,8 +1,9 @@
 class ToplistsController < ApplicationController
   before_filter :require_user, :only => [:new, :create]
+  before_filter :find_category
   
   def index
-    @toplists = Toplist.ordered
+    @toplists = @category ? @category.toplists : Toplist.ordered
   end
   
   def new
@@ -20,6 +21,12 @@ class ToplistsController < ApplicationController
     else
       render :new
     end
+  end
+  
+protected
+
+  def find_category
+    @category = Category.find(params[:category_id]) if params[:category_id]
   end
   
 end
