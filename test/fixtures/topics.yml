@@ -1,8 +1,11 @@
 top5_singers_of_all_time:
   title: "TOP5 singer/songwriters of all time"
+  category: music
 
 top5_albums_of_all_time:
   title: "TOP5 albums of all time"
+  category: music
 
 top5_bicycle_brands:
   title: "TOP5 bicyle brands"
+  category: brands
