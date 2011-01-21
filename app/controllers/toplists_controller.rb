@@ -1,9 +1,9 @@
 class ToplistsController < ApplicationController
   before_filter :require_user, :only => [:new, :create]
-  before_filter :find_category
+  before_filter :find_parent
   
   def index
-    @toplists = @category ? @category.toplists : Toplist.ordered
+    @toplists = @parent ? @parent.toplists : Toplist.ordered
   end
   
   def new
@@ -25,8 +25,9 @@ class ToplistsController < ApplicationController
   
 protected
 
-  def find_category
-    @category = Category.find(params[:category_id]) if params[:category_id]
+  def find_parent
+    @parent = Category.find(params[:category_id]) if params[:category_id]
+    @parent = Topic.find(params[:topic_id]) if params[:topic_id]
   end
   
 end

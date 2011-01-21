@@ -74,17 +74,18 @@ Released   : 20100704
 							<h2>Categories</h2>
 							<ul>
 							  <li><%= link_to 'All', toplists_path %></li>
-							  <% Category.ordered.each do |category| %>
+							  <% Category.ordered.limit(5).each do |category| %>
 							    <li><%= link_to category.title, category_toplists_path(category) %></li>
 							  <% end %>
 							</ul>
 						</li>
 						<li>
-							<h2>TOP5 Lists</h2>
+							<h2>TOP5 Topics</h2>
 							<ul>
-								<li><a href="#">TOP5 movies of all time</a></li>
-								<li><a href="#">TOP5 albums of all time</a></li>
-								<li><a href="#">TOP5 bicycles brands</a></li>
+							  <li><%= link_to 'All', toplists_path %></li>
+							  <% Topic.ordered_by_activity.limit(5).each do |topic| %>
+							    <li><%= link_to topic.title, topic_toplists_path(topic) %></li>
+							  <% end %>
 							</ul>
 						</li>
 						<li>
