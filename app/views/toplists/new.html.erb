@@ -1,5 +1,6 @@
 
 <% form_for @toplist do |f| %>
+  <%= render 'shared/error_messages', :target => @toplist %>
   <fieldset>
     <legend>New Toplist</legend>
     <ol>
@@ -7,6 +8,7 @@
         <%= f.select :topic_id, Topic.all.collect {|topic| [topic.title, topic.id]} %>
       </li>
       <% f.fields_for :items do |g| %>
+        <%= g.hidden_field :position %>
         <li>
           <%= g.label :title, g.object.position %> <%= g.text_field :title %>
         </li>

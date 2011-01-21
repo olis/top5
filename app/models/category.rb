@@ -4,5 +4,5 @@ class Category < ActiveRecord::Base
   
   validates_presence_of :title
   
-  named_scope :ordered, :order => 'position'
+  named_scope :ordered, :order => :position
 end
