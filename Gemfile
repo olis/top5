@@ -6,7 +6,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'ruby-debug'
-# gem 'mysql'
+gem 'mysql2'
 gem 'omniauth'
 
 

@@ -53,7 +53,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (0.0.4)
-    mysql (2.8.1)
+    mysql2 (0.2.6)
     net-ldap (0.1.1)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -139,7 +139,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
-  mysql
+  mysql2
   omniauth
   rails (= 3.0.3)
   ruby-debug
