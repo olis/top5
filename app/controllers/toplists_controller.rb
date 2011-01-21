@@ -4,6 +4,7 @@ class ToplistsController < ApplicationController
   
   def index
     @toplists = @parent ? @parent.toplists : Toplist.ordered
+    @toplists.limit(10)
   end
   
   def new
@@ -28,6 +29,7 @@ protected
   def find_parent
     @parent = Category.find(params[:category_id]) if params[:category_id]
     @parent = Topic.find(params[:topic_id]) if params[:topic_id]
+    @parent  = User.find(params[:user_id]) if params[:user_id]
   end
   
 end

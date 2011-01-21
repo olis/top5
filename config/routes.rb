@@ -14,6 +14,9 @@ Top5::Application.routes.draw do
   resources :topics do
     resources :toplists
   end
+  resources :users do
+    resources :toplists
+  end
   resources :toplists
   
   # The priority is based upon order of creation:
