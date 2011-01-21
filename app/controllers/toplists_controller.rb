@@ -12,7 +12,6 @@ class ToplistsController < ApplicationController
   end
   
   def create
-    debugger
     @toplist = Toplist.new(params[:toplist])
     @toplist.user = current_user
     
