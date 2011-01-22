@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110121214630) do
+ActiveRecord::Schema.define(:version => 20110122114939) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(:version => 20110121214630) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "ctoken"
+    t.string   "csecret"
   end
 
   create_table "categories", :force => true do |t|
