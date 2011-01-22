@@ -24,7 +24,7 @@ Released   : 20100704
 <div id="wrapper">
 	<div id="header">
 		<div id="logo">
-			<h1><% link_to root_path do %>favorite-five<% end %></h1>
+			<h1><%= link_to root_path do %>favorite-five<% end %></h1>
 			<p>Share your Taste.</p>
 		</div>
 		<div id="search">
@@ -50,7 +50,7 @@ Released   : 20100704
 			  <li class="last"><%= link_to 'Sign in', signin_path %></li>
 			<% else %>
 			  <li class="last">
-			    <% link_to signout_path do %>
+			    <%= link_to signout_path do %>
 			      <%= image_tag current_user.image, :size => '32x32' %> <span><%= current_user.name %></span>
 			    <% end%>
 			  </li>
@@ -93,7 +93,7 @@ Released   : 20100704
 							<ul>
 							  <li><%= link_to 'All', toplists_path %></li>
 							  <% User.ordered_by_activity.limit(5).each do |user| %>
-							    <li><% link_to user_toplists_path(user) do %><%= image_tag user.image, :size => '16x16' %> <%= user.name %><% end %></li>
+							    <li><%= link_to user_toplists_path(user) do %><%= image_tag user.image, :size => '16x16' %> <%= user.name %><% end %></li>
 							  <% end %>
 							</ul>
 						</li>

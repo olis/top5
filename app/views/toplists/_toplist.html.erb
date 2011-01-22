@@ -1,6 +1,6 @@
 <div class="toplist">
 	<h2 class="title"><a href="#"><%= toplist.topic.title %></a></h2>
-	<p class="meta">Created by <% link_to user_toplists_path(toplist.user) do %><%= image_tag toplist.user.image, :size => '16x16' %><%= toplist.user.name %><% end %> on <%= toplist.updated_at.to_s(:short) %>
+	<p class="meta">Created by <%= link_to user_toplists_path(toplist.user) do %><%= image_tag toplist.user.image, :size => '16x16' %><%= toplist.user.name %><% end %> on <%= toplist.updated_at.to_s(:short) %>
 		&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <%= link_to 'Add Your Own', new_toplist_path %>
 	<ol class="items">
     <%= render :partial => toplist.items %>
