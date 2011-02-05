@@ -47,7 +47,7 @@ Released   : 20100704
 			<li><a href="#">Contact</a></li>
 			%>
 			<% unless signed_in? %>
-			  <li class="last"><%= link_to 'Sign in', signin_path %></li>
+			  <li class="last"><%= link_to 'Sign in with your Twitter account', signin_path %></li>
 			<% else %>
 			  <li class="last">
 			    <%= link_to signout_path do %>
